@@ -92,9 +92,9 @@
       // implement the rules of the poem
       function processPoem() {
         counter++;
-        if (counter % 5 === 0) {
+        if (counter % 4 === 0) {
           addBlankLine();
-        } else if (counter % 5 === 2 || counter % 5 === 4) {
+        } else if (counter % 4 === 3 || counter % 4 === 4) {
           // if the second or fourth line add the line with an indent
           addLine(true);
         } else {
